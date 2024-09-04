@@ -16,6 +16,7 @@ public class Program8{
         System.out.println("difference = "+difference(num1,num2));
         System.out.println("product = "+product(num1, num2));
         System.out.println("average = "+average(num1, num2));
+        System.out.println("absolute value = "+absoluteValue(num1, num2));
         System.out.println("maximum = "+max(num1, num2));
         System.out.println("minimum = "+min(num1, num2));
     
@@ -34,8 +35,15 @@ public class Program8{
     public static int product(int number1, int number2){
         return(number1*number2);
     }
+    
     public static double average(int number1, int number2){
-        return (double)number1+(double)number2/2.0;
+        double answer = ((double)number1+number2)/2.0;
+        return answer;
+    }
+    
+    public static int absoluteValue(int number1, int number2){
+        int answer = Math.abs(number1-number2);
+        return answer;
     }
     public static int max(int number1, int number2){
         if (number1>number2){
@@ -72,11 +80,11 @@ Enter number1:
 13
 Enter number2: 
 20
-sum = 33
+Sum = 33
 difference = -7
 product = 260
-average = 23.0
+average = 16.5
+absolute value = 7
 maximum = 20
 minimum = 13
-
 */
